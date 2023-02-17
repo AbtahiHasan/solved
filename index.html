@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-red-500 text-7xl text-center">Money Master</h1>
+    <main class="flex justify-center mt-10 gap-5">
+        <div class="">
+            <img src="/images/op.jfif" alt="">
+
+        </div>
+        <div class="bg-slate-100 text-end p-5">
+            <h2 class="text-center text-3xl mb-3 ">Income</h2>
+            <label for="">Income:</label>
+            <input id="income" class="bg-slate-300 mb-3 items-end" type="text" name="" id="">
+            
+            <h2 class="text-center text-3xl mb-3 ">Expanses</h2>
+            <label for="">Food:</label>
+            <input id="food" class="bg-slate-300 mb-3 " type="text" name="" id=""><br>
+            <label for="">Rent:</label>
+            <input id="rent" class="bg-slate-300 mb-3" type="text" name="" id=""><br>
+            <label for="">Clothes:</label>
+            <input id="clothes" class="bg-slate-300 mb-3" type="text" name="" id=""><br>
+            <div class="text-center">
+                <button id="calculate-btn" class="bg-red-500 mb-3">Calculate</button>
+            </div>
+            
+            <h2 class="text-center text-3xl mb-3 ">Total Expanses: <span id="total-expenses">00</span></h2>
+            
+            <h2 class="text-center text-3xl mb-3 ">Balance: <span id="balance">00</span></h2>
+            
+            <label for="">Save:</label>
+            <input id="save" class="bg-slate-300 mb-3 w-1/2" type="text" name="" id=""> <span>%</span>
+            <button id="save-btn" class="bg-red-500 mb-3">Save</button>
+
+            <h2 class="text-center text-3xl mb-3 ">Saving Amount: <span id="saving-amount">00</span></h2>
+            
+            <h2 class="text-center text-3xl mb-3 ">Remaining Balance: <span id="remaining-balance">00</span></h2>
+        </div>
+    </main>
+    <script src="calculation-btn.js"></script>
+    <script src="save-btn.js"></script>
+</body>
+</html>
